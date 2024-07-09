@@ -1,9 +1,15 @@
+package com.example.batinfo;
+
+import android.os.Bundle;
+import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
     static {
-        System.loadLibrary("jni.h"); // Завантаження вашої бібліотеки JNI
+        System.loadLibrary("your-jni-library"); // Р—Р°РІР°РЅС‚Р°Р¶РµРЅРЅСЏ РІР°С€РѕС— Р±С–Р±Р»С–РѕС‚РµРєРё JNI
     }
 
-    public native int getBatteryLevel(); // Оголошення нативного методу
+    public native int getBatteryLevel(); // РћРіРѕР»РѕС€РµРЅРЅСЏ РЅР°С‚РёРІРЅРѕРіРѕ РјРµС‚РѕРґСѓ
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
